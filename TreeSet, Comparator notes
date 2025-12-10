@@ -1,0 +1,27 @@
+Compatable interface present in java.lang package and it contains only one method that is comparedTo() method.
+
+public int compareTo(Object obj)
+
+example
+--------
+obj1.compareTo(obj2);
+
+|-> returns +ve if any only id Obj1 has to come before Obj2.
+|-> return -ve if Obj1 has to come after Obj2
+|-> return 0 if Obj1 and Obj2 are same
+
+comparator
+----------
+comparator is an interface present in java.util.package. this interface defines the following 2 methods.
+
+1)public int compare(Object1 obj1, Object obj2);
+
+compare method internally calls the compareTo() method analysis.
+
+|-> returns -ve if and only id Obj1 has to come before Obj2.
+|-> return +ve if Obj1 has to come after Obj2.
+|-> return 0 if Obj1 and Obj2 are same.
+
+2) public Boolean equals(Object obj);
+whenever we are implementing comparator interface we have to provide only implementation for compare() method.
+implementing equals() method is optional because it is already available from Object class through inheritance
