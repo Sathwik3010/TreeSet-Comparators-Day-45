@@ -11,7 +11,8 @@ obj1.compareTo(obj2);
 |-> return 0 if Obj1 and Obj2 are same
 
 comparator
-----------
+----------      it is mainly used for custom sorting order
+
 comparator is an interface present in java.util.package. this interface defines the following 2 methods.
 
 1)public int compare(Object1 obj1, Object obj2);
